@@ -11,11 +11,11 @@ if( isset($_ENV['PANTHEON_ENVIRONMENT'] ) {
 
 	
 add_filter( 'wpcfm_config_dir', function($dir) {
-	return $_ENV[$env] . '/private/config/dev';
+	return $_ENV[$root] . '/private/config/dev';
 }, 10 );
 	
 
-  $config_dir = untrailingslashit($_ENV['DOCROOT']) . '/private/config';
+  $config_dir = untrailingslashit($_ENV[$root]) . '/private/config';
   $config_url = home_url() . '/private/config';
 
 define( 'WPCFM_CONFIG_DIR', apply_filters( 'wpcfm_config_dir', $config_dir ) );
