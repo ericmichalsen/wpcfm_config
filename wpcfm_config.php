@@ -1,7 +1,6 @@
 <?php
 
-isset($_ENV['PANTHEON_ENVIRONMENT'])
-	
+
 if( isset($_ENV['PANTHEON_ENVIRONMENT'] ) {
 	$root = 'DOCROOT';	
    }
