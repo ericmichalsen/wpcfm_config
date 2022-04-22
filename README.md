@@ -2,4 +2,4 @@
 
 Add in wp-content/mu-plugins
 
-create directories /private/config/dev
+to create directories /private/config/dev
